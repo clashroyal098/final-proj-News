@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+}
+nav{
+    color:white;
+}
+.nav-link {
+    color:white;
+}
+img{
+    width: 20px;
+    height: 20;;
+    color:white;
+}
+.nav-link:hover {
+    color:blue;
+    background-color: cyan;
+    border: dotted 2px purple;
+    border-radius: 20%;
+    padding:5px;
+    transition:linear all 400ms;
+}
+ul li:first-child > a:hover + .dropdown-menu{
+    display: inline-block;
+}
+.dropdown-menu.active{
+    display:inline-block;
+}
+ a{
+    text-decoration: none;
+    color:black;
+    margin-left: 15px;
+}
+ul li:first-child a:last-child{
+    margin-left: 40px;
+}
+.user{
+    margin-left: 30px;
+    border: solid 2px white;
+    border-radius: 100%;
+    padding: 5px;;
+}
+section{
+    margin-top: 100px;;
+}
+h1{
+    color:black;
+}
+.star{
+    color:black;
+    font-size:80px;
+    padding-left:120px;
+}
+.star:hover{
+    color:rgb(70, 192, 201);
+    font-size:90px;
+    animation: star-rotate 3s ease-in-out infinite;
+}
+@keyframes star-rotate {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(0.5);
+    }
+}
+.second-head{
+    background-color: azure;
+    width: 450px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.home-content img{
+    width:100%;
+    height:400px;
+}
+.taja-khabar{
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+}
+.taja-khabar > div:not(div:first-child){
+    font-weight:700;
+    font-size:20px;
+}
+.taja-khabar > div:first-child{
+    font-size:24px;
+}
